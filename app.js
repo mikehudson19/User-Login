@@ -3,6 +3,10 @@ const expressLayouts = require('express-ejs-layouts');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 require('dotenv').config();
+const bcrypt = require('bcrypt');
+
+const saltRounds = 10;
+const myPlaintextPassword = 'nineteen19';
 
 
 const app = express();
@@ -69,11 +73,20 @@ app.post('/register', (req, res) => {
       password: req.body.password,
       password2: req.body.password2
     })
-    console.log(user);
-    // user.save();
+
+    // Hash and salt the password
+    bcrypt.genSalt(saltRounds, (err, salt) => {
+      bcrypt.hash(user.password, salt, (err, hash) => {
+          user.password = hash;
+          user.password2 = hash;
+          // user.save();
+          console.log(user);
+      });
+    });
+    
     res.render('access');
+
   }
-  
 })
 
 
