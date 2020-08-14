@@ -32,7 +32,7 @@ app.use(
     saveUninitialized: false
   })
 );
-
+app.use(express.static("public"));
 
 
 // Passport middleware

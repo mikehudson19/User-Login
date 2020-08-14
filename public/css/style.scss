@@ -1,0 +1,160 @@
+body {
+  background: rgb(17, 17, 17);
+  color: white;
+  font-family: 'News Cycle', sans-serif;
+  letter-spacing: 1.1px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  &__links {
+    display: flex;
+    flex-direction: row;
+  }
+  &__text {
+    font-size: 1.5rem;
+  }
+  &__link {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    background: white;
+    margin: 0 0.5rem;
+    width: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+    &:hover {
+      background: rgb(1, 114, 1);
+      color: white;
+    }
+  }
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  &__container {
+    background: rgba(80, 80, 80, 0.596);
+    padding: 2.5rem 3rem;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__input {
+    margin-bottom: 0.9rem;
+    border: none;
+    padding: 0.4rem;
+  }
+  &__btn {
+    padding: 0.75rem 0.3rem;
+    background: white;
+    border: none;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    letter-spacing: 1.3px;
+    &:hover {
+      background: rgb(1, 114, 1);
+      color: white;
+      cursor: pointer;
+      border: 0.5px white solid;
+    }
+  }
+  &__text {
+    margin-top: 2.5rem;
+  }
+  &__link {
+    color: rgb(0, 151, 0);
+  }
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  &__container {
+    background: rgba(80, 80, 80, 0.596);
+    padding: 2.5rem 3rem;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__input {
+    margin-bottom: 0.9rem;
+    border: none;
+    padding: 0.4rem;
+  }
+  &__btn {
+    padding: 0.75rem 0.3rem;
+    background: white;
+    border: none;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    letter-spacing: 1.3px;
+    &:hover {
+      background: rgb(1, 114, 1);
+      color: white;
+      cursor: pointer;
+      border: 0.5px white solid;
+    }
+  }
+  &__text {
+    margin-top: 2.5rem;
+  }
+  &__link {
+    color: rgb(0, 151, 0);
+  }
+}
+
+.access {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  &__group {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    align-items: center;
+  }
+  &__link {
+    background: white;
+    color: black;
+    padding: 1rem;
+    text-decoration: none;
+    width: 15rem;
+    text-align: center;
+    &:hover {
+      background: grey;
+      color: white;
+    }
+  }
+  &__btn {
+    padding: 0.95rem 2.05rem;
+    background: white;
+    border: none;
+    font-family: 'Manjari', sans-serif;
+    margin-top: 1rem;
+    font-size: 1rem;
+    width: 17.2rem;
+    &:hover {
+      background: grey;
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+}

@@ -1,0 +1,241 @@
+body {
+  background: #111111;
+  color: white;
+  font-family: 'News Cycle', sans-serif;
+  letter-spacing: 1.1px;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.home__text {
+  font-size: 1.5rem;
+}
+
+.home__link {
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  background: white;
+  margin: 0 0.5rem;
+  width: 6rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.home__link:hover {
+  background: #017201;
+  color: white;
+}
+
+.register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.register__container {
+  background: rgba(80, 80, 80, 0.596);
+  padding: 2.5rem 3rem;
+}
+
+.register__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.register__input {
+  margin-bottom: 0.9rem;
+  border: none;
+  padding: 0.4rem;
+}
+
+.register__btn {
+  padding: 0.75rem 0.3rem;
+  background: white;
+  border: none;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  letter-spacing: 1.3px;
+}
+
+.register__btn:hover {
+  background: #017201;
+  color: white;
+  cursor: pointer;
+  border: 0.5px white solid;
+}
+
+.register__text {
+  margin-top: 2.5rem;
+}
+
+.register__link {
+  color: #009700;
+}
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login__container {
+  background: rgba(80, 80, 80, 0.596);
+  padding: 2.5rem 3rem;
+}
+
+.login__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login__input {
+  margin-bottom: 0.9rem;
+  border: none;
+  padding: 0.4rem;
+}
+
+.login__btn {
+  padding: 0.75rem 0.3rem;
+  background: white;
+  border: none;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  letter-spacing: 1.3px;
+}
+
+.login__btn:hover {
+  background: #017201;
+  color: white;
+  cursor: pointer;
+  border: 0.5px white solid;
+}
+
+.login__text {
+  margin-top: 2.5rem;
+}
+
+.login__link {
+  color: #009700;
+}
+
+.access {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 90vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.access__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.access__link {
+  background: white;
+  color: black;
+  padding: 1rem;
+  text-decoration: none;
+  width: 15rem;
+  text-align: center;
+}
+
+.access__link:hover {
+  background: grey;
+  color: white;
+}
+
+.access__btn {
+  padding: 0.95rem 2.05rem;
+  background: white;
+  border: none;
+  font-family: 'Manjari', sans-serif;
+  margin-top: 1rem;
+  font-size: 1rem;
+  width: 17.2rem;
+}
+
+.access__btn:hover {
+  background: grey;
+  color: white;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
