@@ -74,31 +74,19 @@ app.post('/register', checkNotAuthenticated, (req, res) => {
   User.findOne({email: req.body.email })
     .then(user => {
       if (user) {
-        errors.push('User already exists.')
-        res.render('register', {messages: errors} );
+        errors.push('An account with that email already exists.')
       } else if (req.body.password.length < 6) {
-        console.log(req.body.password)
         errors.push('Password must be longer than 6 characters.')
-        res.render('register', {messages: errors} );
       } else if (!/[A-Z]/.test(req.body.password)) {
-        console.log(req.body.password)
         errors.push('Password must contain at least one uppercase character.')
-        res.render('register', {messages: errors} );
-        console.log(errors);
-
       } else if (!/[a-z]/.test(req.body.password)) {
-        console.log(req.body.password)
         errors.push('Password must contain at least one lowercase character.')
-        console.log(errors);
-        res.render('register', {messages: errors} );
       } else if (!/[0-9]/.test(req.body.password)) {
-        console.log(req.body.password)
         errors.push('Password must contain at least one number.')
-        res.render('register', {messages: errors} );
       } else if (!/\W|_/g.test(req.body.password)) {
-        console.log(req.body.password)
         errors.push('Password must contain at least one special character.')
-        res.render('register', {messages: errors} );
+      } else if (req.body.password !== req.body.password2) {
+        errors.push('Passwords must match.')
       } else {
         const user = new User({
           firstName: req.body.firstName,
@@ -119,6 +107,8 @@ app.post('/register', checkNotAuthenticated, (req, res) => {
         });
         res.render('login');
       }
+      res.render('register', {messages: errors} );
+
     })
     .catch(err => console.log(err));
 
