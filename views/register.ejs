@@ -1,11 +1,12 @@
 <div class="register">
   <div class="register__container">
   <h1 class="register__heading">Register here</h1>
-
+<div class="register__message">
   <% if (messages.length == 1) { %> <% messages.forEach((message) => { %>
   <p><%= message %></p>
 
   <% })} %>
+</div>
 
   <form class="register__form" action="/register" method="POST">
     <input
@@ -55,8 +56,8 @@
   </form>
 </div>
 
-  <h2 class="register__text">
+  <p class="register__text">
     Already registered?
-    <a href="/login" class="register__link">Login here</a> instead
-  </h2>
+    <a href="/login" class="register__link">Login here</a> instead.
+  </p>
 </div>
