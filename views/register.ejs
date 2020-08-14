@@ -1,9 +1,18 @@
 <h1>Register here</h1>
-<%= messages %>
+
+<% if (messages.length == 1) { %>
+  <% messages.forEach((message) => { %>
+    <p><%= message %></p>
+
+<%  })}  %>
+
+
 <form action="/register" method="POST">
-  <input type="name" name="name" id="name" placeholder="Name">
+  <input type="name" name="firstName" id="name" placeholder="First Name">
+  <input type="name" name="lastName" id="lastName" placeholder="Last Name">
   <input type="email" name="email" placeholder="Email">
   <input type="password" name="password" placeholder="Password">
   <input type="password" name="password2" placeholder="Confirm Password">
   <button type="submit">Register</button>
 </form>
+<h2>Already registered? <a href="/login">Login here</a> instead</h2>
