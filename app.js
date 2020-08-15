@@ -111,9 +111,6 @@ app.post('/register', checkNotAuthenticated, (req, res) => {
 
     })
     .catch(err => console.log(err));
-
-   
-  
 })
  
 app.post('/login', checkNotAuthenticated, passport.authenticate('local', {

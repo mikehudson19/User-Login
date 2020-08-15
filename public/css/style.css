@@ -13,13 +13,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 80vh;
+  height: 90vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
 .home__links {
@@ -60,7 +61,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh;
+  height: 90vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -135,7 +136,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh;
+  height: 90vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -217,6 +218,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
 .access__group {
@@ -243,7 +245,7 @@ body {
 }
 
 .access__link:hover {
-  background: grey;
+  background: #017201;
   color: white;
 }
 
@@ -258,8 +260,81 @@ body {
 }
 
 .access__btn:hover {
-  background: grey;
+  background: #017201;
   color: white;
   cursor: pointer;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__text {
+  font-size: 0.7rem;
+}
+
+@media (max-width: 430px) {
+  .home__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home__link {
+    margin-top: 1rem;
+  }
+  .register__input {
+    width: 95%;
+  }
+  .register__btn {
+    width: 100%;
+  }
+  .login__input {
+    width: 95%;
+  }
+  .login__btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .register__input {
+    width: 90%;
+  }
+  .register__btn {
+    width: 95%;
+  }
+  .login__input {
+    width: 90%;
+  }
+  .login__btn {
+    width: 95%;
+  }
+}
+
+@media (max-width: 760px) {
+  .register__container {
+    width: 45%;
+  }
+  .login__container {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .access__btn {
+    width: 14rem;
+  }
+  .access__link {
+    width: 12.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
