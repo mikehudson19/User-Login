@@ -189,6 +189,9 @@ body {
 
 @media (max-width: 430px) {
   .home {
+    &__heading {
+      margin: 0 1rem;
+    }
     &__links {
       display: flex;
       flex-direction: column;
