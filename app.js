@@ -44,7 +44,7 @@ app.use(methodOverride('_method'));
 const username = process.env.USERNAME;
 const password = process.env.PASSWORD;
 
-mongoose.connect(`mongodb+srv://${username}:${password}@cluster0.cstov.mongodb.net/usersDB?retryWrites=true&w=majority`, {
+mongoose.connect(`mongodb+srv://${username}:${password}@cluster0.cstov.mongodb.net/usersDB`, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
