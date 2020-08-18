@@ -47,7 +47,8 @@ const password = process.env.PASSWORD;
 mongoose.connect(`mongodb+srv://${username}:${password}@cluster0.cstov.mongodb.net/usersDB?retryWrites=true&w=majority`, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-});
+})
+.catch(err => {console.log(err)});
 
 
 app.get('/access', checkAuthenticated, (req, res) => {
